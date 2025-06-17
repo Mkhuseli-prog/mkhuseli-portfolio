@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mkhuseli | Portfolio</title>
+    <link rel="stylesheet" href="Stylez.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Mkhuseli Nyamfu</h1>
+        <p>Aspiring Web Developer | Diploma in IT</p>
+
+        <nav class="navbar">
+            <a href="#about" aria-label="About section">About</a>
+            <a href="#skills" aria-label="Skills section">Skills</a>
+            <a href="#projects" aria-label="Projects section">Projects</a>
+            <a href="#contact" aria-label="Contact section">Contact</a>
+        </nav>
+
+        <button id="theme-toggle" aria-label="Toggle dark or light mode">🌙 Dark Mode</button>
+    </header>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>I’m a passionate tech graduate seeking an internship to grow and contribute in a real-world environment. I
+            have hands-on experience in HTML, CSS, JavaScript, and Git, and I’m eager to keep learning.</p>
+        <a href="/MkhuseliNyamfuSoft (1).pdf" download class="download-btn">📄 Download CV</a>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+
+        <div class="skill">
+            <p>HTML5, CSS3, JavaScript</p>
+            <div class="progress-bar">
+                <div class="progress" data-progress="90%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Git & GitHub</p>
+            <div class="progress-bar">
+                <div class="progress" data-progress="80%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Firebase Hosting</p>
+            <div class="progress-bar">
+                <div class="progress" data-progress="75%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Basic PHP & MySQL</p>
+            <div class="progress-bar">
+                <div class="progress" data-progress="70%"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Student Info Form</h3>
+            <p>A basic form using HTML, CSS and JavaScript that collects and displays student info.</p>
+            <button onclick="openModal('modal1')" aria-label="View details for Student Info Form">View More</button>
+        </div>
+
+        <div class="project">
+            <h3>To-Do List App</h3>
+            <p>Created a dynamic to-do list using JavaScript DOM manipulation.</p>
+            <button onclick="openModal('modal2')" aria-label="View details for To-Do List App">View More</button>
+        </div>
+
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')" aria-label="Close modal">&times;</span>
+                <h3>Student Info Form</h3>
+                <p>This project uses a clean UI to gather and validate student details using HTML5 and JavaScript. It
+                    includes real-time validation and formatted display of user input.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')" aria-label="Close modal">&times;</span>
+                <h3>To-Do List App</h3>
+                <p>An interactive to-do list that supports adding, editing, deleting, and checking tasks. Built using
+                    JavaScript DOM manipulation.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xanoqdyo" method="POST">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Mkhuseli Nyamfu. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Mkhuseli-prog" target="_blank" aria-label="GitHub">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/mkhuseli-nyamfu-779685123/" target="_blank" aria-label="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    alt="LinkedIn" />
+            </a>
+            <a href="mailto:mkhuselinyamfu97@gmail.com" target="_blank" aria-label="Email">
+                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/new-post.png" alt="Email" />
+            </a>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
